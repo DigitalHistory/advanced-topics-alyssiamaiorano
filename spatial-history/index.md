@@ -1,3 +1,4 @@
+
 # Early Modern Royal Hospitals: Social, Political and Religious Turmoil
 #### Illness On The Outskirts of Early Modern London
 
@@ -7,11 +8,13 @@ as the city has grown substantially around them since the 1530 dissolution of th
 London expanded to include Westminster and areas below the River Thames into the modern era. In the 1530s when
 Royal Hospitals, that aided the sick *and*  the criminal, after church hospitals (and all other charity programs
 operated by the church) were dissolved, were founded, fears of the spread of infectious disease and plagues was
-heightened.[^1] (Plague on a Page) In relation to what were considered immoral illnesses, such as venereal diseases like syphilis,
-commonly referred to in the period as "the pox," these fears of disease grew. Through the fear of disease,
-and early modern ideas of health and medicine, London moved its care to the peripheries.
+heightened.
+[^1]:Jenner_225
+Plagues frequently affected populations in London and across Britain, posing a threat to the growth of the "empire" that was the ever expanding English monarchy, and the absorbtion of what were the four countries of the British Isles, by 1625 with Charles the First of England, Third of Scotland. Plague and other infections were deemed as part of a natural order for society's behaviours. In relation to what were considered immoral illnesses, such as venereal diseases like syphilis,
+commonly referred to in the period as "the French pox," or more simply "the pox" fears of disease and morality in the city of London grew. The fear of disease,
+and early modern ideas of health, medicine, and morality, London moved its care to the peripheries.
 
-The Royal Hospitals that were reinstated by the City of London were Bethlem Hospital, Saint Barthomew, Saint Thomas, and BrideWell Hospital and Prison. These hospitals
+The Royal Hospitals that were reinstated by the City of London were Bethlem Hospital, Saint Bartholomew, Saint Thomas, and BrideWell Hospital and Prison. These hospitals
 were located at the outermost parts of London, what is now The City of London.
 Situated near brothels and theatres, hospitals were pushed to the margins of society,
 particularly when it came to the treatment of venereal diseases.[^2] () Ideas of morality and health, coincide with the Humors of early modern medicine theory, pushed these diseases, their respective activities, and all other taboo forms of entertainment or health care away from the inner city, to prevent the spread of diseases and ideas.
