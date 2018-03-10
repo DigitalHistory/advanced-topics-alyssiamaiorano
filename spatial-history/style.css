@@ -30,7 +30,7 @@ div#map_legend {
 
 /* if you want, you can make the text in the legend less ugly by adding
 extra css classes */
-div#map_legend h1, div#map_legend h3 {
+div#map_legend h1, div#map_legend h6 {
 
 }
 
@@ -67,11 +67,11 @@ div#map_canvas h1 {
 
 }
 
-div.address  {
+div.address  { font-size: 40px
 
 }
 
-div.description {
+div.description { font-size: 12px
 
 }
 
