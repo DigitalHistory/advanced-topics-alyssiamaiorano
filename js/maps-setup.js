@@ -87,7 +87,13 @@ function initializeMap() {
              title: "BrideWell Hospital and Prison",
              window_content: "<h1>BrideWell</h1><p> Both hospital and prison, solidified ideas of illness and evil and punishment for criminality or 'loose morals,' BridwWell is a testiment to the period's mentality on illness.</p>"
             },
-            ];
+            {position: new google.maps.LatLng(51.512344, -0.090985),
+              map: my_map,
+              icon: blueURL, // this sets the image that represents the marker in the map to the one
+                             // located at the URL which is given by the variable blueURL, see above
+              title: "City of London",
+              window_content: "<h1>London Center 16th Century</h1><p> What is now known as the City of London, this area used to be the focal point of London, and expanded but did not include Westminster at this time.</p>"
+            }];
 
     for (j = 0; j < all_my_markers.length; j++) {
         var marker =  new google.maps.Marker({
