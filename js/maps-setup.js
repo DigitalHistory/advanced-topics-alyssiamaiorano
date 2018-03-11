@@ -32,6 +32,11 @@ var myGeoJSON= {
                 "coordinates":[[[-85.60546875,49.03786794532644],[-96.6796875,40.713955826286046],
                                 [-79.62890625,37.71859032558816],[-81.2109375,49.26780455063753],
                                 [-85.60546875,49.03786794532644]]]}},
+                                //I couldnt actually figure out what was making the polygon not work, i tried imputting the
+                                //numbers in various ways. i at first attempted to put these numbers as seen below, but it
+                                //didnt work. it would have been nice to actually show the perimeters of Early Modern London
+                                //i've typed in the coordinates in lat long but maybe that is the problem... i dont know what
+                                //kind of quardinates to use.
    {"type":"Feature",
     "properties":{myColor: 'green'},
     "myColor" : "green",
@@ -61,27 +66,26 @@ function initializeMap() {
               icon: blueURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
               title: "St. Thomas's Hospital",
-              window_content: "<h1>St. Thomas's Hopsital</h1><p> and this would be the extended description</p>"
+              window_content: "<h1>St. Thomas's Hopsital</h1><p> Initially dissolved in 1530, due to King Henry VIII's Act of Supremacy that confescated all church property, separating church and state. </p>"
              },
              {position: new google.maps.LatLng(51.516763,-0.098675),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map
               title: "St. Bartholemew's Hospital",
-              window_content: "<h1>St. Bartholemew's Hospital</h1><p> and <a href='http://something'>this would</a> be the extended description</p>"
+              window_content: "<h1>St. Bartholemew's Hospital</h1><p>One of the latter Royal Hospitals, located just North of the City's borders, here there began an emphasis on gardens, and outdoor space for patients</p>"
             },
             {position: new google.maps.LatLng(51.380922,-0.028995),
              map: my_map,
              icon: blueURL, // this sets the image that represents the marker in the map
              title: "Bethlem Hospital",
-             window_content: '<h1>Bethlem Hospital</h1><img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
-             '<blockquote>quote quote quote quote</blockquote>'
+             window_content: "<h1>Bethlem Hospital</h1><p></p>Known as 'Bedlam' Hospital during the time, one of the only hospitals in London to treat syphilis patients during the 17th Century. One of the first Royal Hopsitals reinstated after the dissolution of the Monasteries in 1530."
            },
            {position: new google.maps.LatLng(51.544976,-0.116053),
              map: my_map,
              icon: blueURL, // this sets the image that represents the marker in the map to the one
                             // located at the URL which is given by the variable blueURL, see above
              title: "BrideWell Hospital and Prison",
-             window_content: "<h1>BrideWell</h1><p> and this would be the extended description</p>"
+             window_content: "<h1>BrideWell</h1><p> Both hospital and prison, solidified ideas of illness and evil and punishment for criminality or 'loose morals,' BridwWell is a testiment to the period's mentality on illness.</p>"
             },
             ];
 

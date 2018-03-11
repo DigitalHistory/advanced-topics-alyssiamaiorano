@@ -67,16 +67,16 @@ div#map_canvas h1 {
 
 }
 
-div.address  { font-size: 40px
+div.address  {
 
 }
 
-div.description { font-size: 12px
+div.description { font-size: 20px
 
 }
 
 div.gm-style-iw {
-    max-height: 75px;
+    max-height: 150px;
 }
 div.gm-style-iw img {
     max-width: 75% !important;
