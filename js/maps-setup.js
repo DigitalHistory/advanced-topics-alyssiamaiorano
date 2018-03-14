@@ -3,11 +3,12 @@
 // whenever we need to -- they have 'global scope'
 var my_map; // this will hold the map
 var my_map_options; // this will hold the options we'll use to create the map
-var my_center = new google.maps.LatLng(41.8986,12.4768); // center of map
-var my_markers = []; // we use this in the main loop below to hold the markers
+var my_center = new google.maps.LatLng(51.512344, -0.090985); // center of map
+var my_markers = [];
+// we use this in the main loop below to hold the markers
 // this one is strange.  In google maps, there is usually only one
 // infowindow object -- its content and position change when you click on a
-// marker.  This is counterintuitive, but we need to live with it.  
+// marker.  This is counterintuitive, but we need to live with it.
 var infowindow = new google.maps.InfoWindow({content: ""});
 var legendHTML = "<h1>Legend</h1>";
 
@@ -31,6 +32,11 @@ var myGeoJSON= {
                 "coordinates":[[[-85.60546875,49.03786794532644],[-96.6796875,40.713955826286046],
                                 [-79.62890625,37.71859032558816],[-81.2109375,49.26780455063753],
                                 [-85.60546875,49.03786794532644]]]}},
+                                //I couldnt actually figure out what was making the polygon not work, i tried imputting the
+                                //numbers in various ways. i at first attempted to put these numbers as seen below, but it
+                                //didnt work. it would have been nice to actually show the perimeters of Early Modern London
+                                //i've typed in the coordinates in lat long but maybe that is the problem... i dont know what
+                                //kind of quardinates to use.
    {"type":"Feature",
     "properties":{myColor: 'green'},
     "myColor" : "green",
@@ -46,7 +52,7 @@ var myGeoJSON= {
 function initializeMap() {
     my_map_options = {
         center:  my_center, // to change this value, change my_center above
-        zoom: 13,  // higher is closer-up
+        zoom: 12,  // higher is closer-up
         mapTypeId: google.maps.MapTypeId.HYBRID // you can also use TERRAIN, STREETMAP, SATELLITE
     };
 
@@ -55,27 +61,39 @@ function initializeMap() {
                                  my_map_options);
     // this is an *array* that holds all the marker info
     var all_my_markers =
-            [{position: new google.maps.LatLng(41.9000,12.5000),
+            [{position: new google.maps.LatLng(51.498802,-0.118350),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
-              title: "first Marker",
-              window_content: "<h1>Marker1</h1><p> and this would be the extended description</p>"
+              title: "St. Thomas's Hospital",
+              window_content: "<h1>St. Thomas's Hopsital</h1><p> Initially dissolved in 1530, due to King Henry VIII's Act of Supremacy that confescated all church property, separating church and state. </p>"
              },
-             {position: new google.maps.LatLng(41.8902,12.4923),
+             {position: new google.maps.LatLng(51.516763,-0.098675),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map
-              title: "second Marker",
-              window_content: "<h1>Marker2</h1><p> and <a href='http://something'>this would</a> be the extended description</p>"
+              title: "St. Bartholemew's Hospital",
+              window_content: "<h1>St. Bartholemew's Hospital</h1><p>One of the latter Royal Hospitals, located just North of the City's borders, here there began an emphasis on gardens, and outdoor space for patients</p>"
             },
-            {position: new google.maps.LatLng(41.8986,12.4768),
+            {position: new google.maps.LatLng(51.380922,-0.028995),
              map: my_map,
-             icon: redURL, // this sets the image that represents the marker in the map
-             title: "third Marker",
-             window_content: '<h1>Marker3</h1><img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
-             '<blockquote>quote quote quote quote</blockquote>'
-           }
-            ];
+             icon: blueURL, // this sets the image that represents the marker in the map
+             title: "Bethlem Hospital",
+             window_content: "<h1>Bethlem Hospital</h1><p></p>Known as 'Bedlam' Hospital during the time, one of the only hospitals in London to treat syphilis patients during the 17th Century. One of the first Royal Hopsitals reinstated after the dissolution of the Monasteries in 1530."
+           },
+           {position: new google.maps.LatLng(51.544976,-0.116053),
+             map: my_map,
+             icon: blueURL, // this sets the image that represents the marker in the map to the one
+                            // located at the URL which is given by the variable blueURL, see above
+             title: "BrideWell Hospital and Prison",
+             window_content: "<h1>BrideWell</h1><p> Both hospital and prison, solidified ideas of illness and evil and punishment for criminality or 'loose morals,' BridwWell is a testiment to the period's mentality on illness.</p>"
+            },
+            {position: new google.maps.LatLng(51.512344, -0.090985),
+              map: my_map,
+              icon: blueURL, // this sets the image that represents the marker in the map to the one
+                             // located at the URL which is given by the variable blueURL, see above
+              title: "City of London",
+              window_content: "<h1>London Center 16th Century</h1><p> What is now known as the City of London, this area used to be the focal point of London, and expanded but did not include Westminster at this time.</p>"
+            }];
 
     for (j = 0; j < all_my_markers.length; j++) {
         var marker =  new google.maps.Marker({
@@ -86,7 +104,7 @@ function initializeMap() {
             window_content: all_my_markers[j].window_content});
 
         // this next line is ugly, and you should change it to be prettier.
-        // be careful not to introduce syntax errors though.  
+        // be careful not to introduce syntax errors though.
       legendHTML +=
         "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> " +
           marker.window_content + "</div>";
@@ -104,7 +122,7 @@ function initializeMap() {
         } else if (all_my_markers[j].icon == redURL ) {
             red_markers.push({marker:marker, listener:listener});
         }
-        
+
     }
     document.getElementById("map_legend").innerHTML = legendHTML;
   my_map.data.addGeoJson(myGeoJSON);
@@ -116,7 +134,7 @@ function initializeMap() {
     fillColor: '#FF0000',
     fillOpacity: 0.35,
     // in general, we always have to *set the map* when we
-    // add features. 
+    // add features.
     map: my_map,
     bounds: {
       north: 42.685,
@@ -127,7 +145,7 @@ function initializeMap() {
 
     center: {"lat": 41.9000, "lng":12.5000},
     radius: 1000
-  });  
+  });
   my_map.data.setStyle(function (feature) {
     var thisColor = feature.getProperty("myColor");
     return {
@@ -172,7 +190,7 @@ function toggleMarkers (marker_array, map) {
 
 
 // I added this for fun.  It allows you to trigger the infowindow
-// from outside the map.  
+// from outside the map.
 function locateMarker (marker) {
     console.log(marker);
     my_map.panTo(marker.marker.position);
