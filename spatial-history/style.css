@@ -25,7 +25,8 @@ div#map_canvas {
 have to add some extra css to the mapcontainer div */
 div#map_legend {
     max-width:30%;
-    float:left;
+    float:clear;
+
 }
 
 /* if you want, you can make the text in the legend less ugly by adding

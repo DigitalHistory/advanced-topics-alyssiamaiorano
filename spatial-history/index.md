@@ -12,7 +12,7 @@ heightened. [^1]
 
 
 Plagues frequently affected populations in London and across Britain, posing a threat to the growth of the "empire" that was the ever expanding English monarchy, and the absorption of what were the four countries of the British Isles, by 1625 with Charles the First of England, Third of Scotland. Plague and other infections were deemed as part of a natural order for society's behaviours. In relation to what were considered immoral illnesses, such as venereal diseases like syphilis,
-commonly referred to in the period as "the French pox," or more simply "the pox" fears of disease and morality in the city of London grew. The fear of disease,
+commonly referred to in the period as "the French pox," or more simply "the pox" fears of disease and morality in the city of London grew. As a result of the fear of disease,
 and early modern ideas of health, medicine, and morality, London moved its care to the peripheries.
 
 The Royal Hospitals that were reinstated by the City of London were Bethlem Hospital, Saint Bartholomew, Saint Thomas, and BrideWell Hospital and Prison. These hospitals
@@ -21,7 +21,7 @@ Situated near brothels and theatres, hospitals were pushed to the margins of soc
 particularly when it came to the treatment of venereal diseases.[^2] Ideas of morality and health, coincide with the Humors of early modern medicine theory, pushed these diseases, their respective activities, and all other taboo forms of entertainment or health care away from the inner city, to prevent the spread of diseases and ideas.
 
 [^1]: Mark S.R. Jenner (2012) Plague on a Page: Lord Have Mercy Upon Us in
-Early Modern London, The Seventeenth Century, 27:3 [Link] (https://www-tandfonline-com.myaccess.library.utoronto.ca/doi/pdf/10.7227/TSC.27.3.2?needAccess=true)
+Early Modern London, The Seventeenth Century, 27:3 [Link](https://www-tandfonline-com.myaccess.library.utoronto.ca/doi/pdf/10.7227/TSC.27.3.2?needAccess=true)
 [^2]:Kevin Siena, The Clean and the Foul: Paupers and the
 Pox in London Hospitals, c.1550–c.1700 [Link](https://portal.utoronto.ca/bbcswebdav/pid-6154566-dt-content-rid-39388825_2/courses/Fall-2017-HIS368H1-F-LEC0101/Siena%20-%20Paupers%20and%20the%20Pox%20in%20London%20Hospitals%2C%201550-1700.pdf)
 
@@ -38,6 +38,8 @@ Pox in London Hospitals, c.1550–c.1700 [Link](https://portal.utoronto.ca/bbcsw
   <div id="map_legend"></div>
 </div>
 
+<div class = "clearme"></div>
+
 ## The State and Illness: Social and Political Motivations
 With the family as the microcosm of the English state, the Crown wanted to ensure the organization of family matters, in order to prevent chaos. Ideas of marriage and purity, for both genders, were essential to keeping social order. Sexual promiscuity and unmarried men or women, especially immigrant or "stateless men," were seen as a problem for the city, spreading ideas of family and sex that will disrupt families, and therefore disrupt the state.[^3] Venereal diseases, in particular, were on the King's radar by 1600, due to their nature and relationship with sex, prostitution and extramarital affairs. Hospitals treated all *known*  forms of pathology in early modern London, but their locations were dedicated to the quarantine of infectious diseases, including the plague.   
 
@@ -53,5 +55,5 @@ Given that these hospitals were so far removed from society they were virtually 
 Early Modern science was merely a guessing game, especially for many known and commonly treated illnesses today, but the effective quarantine of infectious diseases and often the ideas that so-called 'corrupted' the people who were affected by them, perhaps remains to be seen within the landscape of the city itself.  
 
 
-[^7]: Paul, Griffiths. "Contesting London Bridewell, 1576–1580." Journal of British Studies 42, no. 3 (2003): 283-315. doi:10.1086/374292.[Link] (https://www-cambridge-org.myaccess.library.utoronto.ca/core/services/aop-cambridge-core/content/view/CDB62A45EC63B6B9376AA9F91ECB9F90/S0021937100007309a.pdf/contesting_london_bridewell_15761580.pdf)
+[^7]: Paul, Griffiths. "Contesting London Bridewell, 1576–1580." Journal of British Studies 42, no. 3 (2003): 283-315. doi:10.1086/374292.[Link](https://www-cambridge-org.myaccess.library.utoronto.ca/core/services/aop-cambridge-core/content/view/CDB62A45EC63B6B9376AA9F91ECB9F90/S0021937100007309a.pdf/contesting_london_bridewell_15761580.pdf)
 ## FootNotes / Bibiliography

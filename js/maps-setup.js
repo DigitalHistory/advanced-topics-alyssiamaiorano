@@ -66,33 +66,33 @@ function initializeMap() {
               icon: blueURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
               title: "St. Thomas's Hospital",
-              window_content: "<h1>St. Thomas's Hopsital</h1><p> Initially dissolved in 1530, due to King Henry VIII's Act of Supremacy that confescated all church property, separating church and state. </p>"
+              window_content: "<h1>St. Thomas's Hopsital</h1><p> Initially dissolved in 1539, due to King Henry VIII's Act of Supremacy that confescated all church property, separating church and state. Founded in 1100 and reinstated in 1551. </p>"
              },
              {position: new google.maps.LatLng(51.516763,-0.098675),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map
               title: "St. Bartholemew's Hospital",
-              window_content: "<h1>St. Bartholemew's Hospital</h1><p>One of the latter Royal Hospitals, located just North of the City's borders, here there began an emphasis on gardens, and outdoor space for patients</p>"
+              window_content: "<h1>St. Bartholemew's Hospital</h1><p>One of the latter Royal Hospitals, located just North of the City's borders, here there began an emphasis on gardens, and outdoor space for patients. Founded in 1123, and was refounded in 1546 by King Henry I, a plague year.</p>"
             },
             {position: new google.maps.LatLng(51.380922,-0.028995),
              map: my_map,
              icon: blueURL, // this sets the image that represents the marker in the map
              title: "Bethlem Hospital",
-             window_content: "<h1>Bethlem Hospital</h1><p></p>Known as 'Bedlam' Hospital during the time, one of the only hospitals in London to treat syphilis patients during the 17th Century. One of the first Royal Hopsitals reinstated after the dissolution of the Monasteries in 1530."
+             window_content: "<h1>Bethlem Hospital</h1><img src= \'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Most_of_Bethlehem_Hospital_by_William_Henry_Toms_for_William_Maitland%27s_History_of_London%2C_published_1739.jpg/220px-Most_of_Bethlehem_Hospital_by_William_Henry_Toms_for_William_Maitland%27s_History_of_London%2C_published_1739.jpg'><p>Known as 'Bedlam' Hospital during the time, one of the only hospitals in London to treat syphilis patients during the 16th and 17th Century. Founded in 1247 and in 1337 as a hospital, Bedlam was one of the first Royal Hopsitals reinstated after the dissolution of the Monasteries, in 1546.</p>"
            },
            {position: new google.maps.LatLng(51.544976,-0.116053),
              map: my_map,
              icon: blueURL, // this sets the image that represents the marker in the map to the one
                             // located at the URL which is given by the variable blueURL, see above
              title: "BrideWell Hospital and Prison",
-             window_content: "<h1>BrideWell</h1><p> Both hospital and prison, solidified ideas of illness and evil and punishment for criminality or 'loose morals,' BridwWell is a testiment to the period's mentality on illness.</p>"
+             window_content: "<h1>BrideWell</h1> <p> Both hospital and prison, solidified ideas of illness and evil and punishment for criminality or 'loose morals,' BridwWell is a testiment to the period's mentality on illness. Bridewell was established in a former Royal Palace in London in 1553.</p>"
             },
             {position: new google.maps.LatLng(51.512344, -0.090985),
               map: my_map,
-              icon: blueURL, // this sets the image that represents the marker in the map to the one
+              icon: redURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
               title: "City of London",
-              window_content: "<h1>London Center 16th Century</h1><p> What is now known as the City of London, this area used to be the focal point of London, and expanded but did not include Westminster at this time.</p>"
+              window_content: "<h1>London Center 16th Century</h1><p> What is now known as the City of London, this area used to be the focal point of London, until the end of the 17th century when emmigration to London grew too much for the city, expanding to include Westminster.</p>"
             }];
 
     for (j = 0; j < all_my_markers.length; j++) {
@@ -105,9 +105,10 @@ function initializeMap() {
 
         // this next line is ugly, and you should change it to be prettier.
         // be careful not to introduce syntax errors though.
+        //can hide the desc and photos of legend in css
       legendHTML +=
         "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> " +
-          marker.window_content + "</div>";
+          marker.title + "</div>";
         marker.info = new google.maps.InfoWindow({content: marker.window_content});
         var listener = google.maps.event.addListener(marker, 'click', function() {
             // if you want to allow multiple info windows, uncomment the next line
@@ -127,7 +128,7 @@ function initializeMap() {
     document.getElementById("map_legend").innerHTML = legendHTML;
   my_map.data.addGeoJson(myGeoJSON);
 
-  var romeCircle = new google.maps.Rectangle({
+  var romeCircle = new google.maps.Circle({
     strokeColor: '#FF0000',
     strokeOpacity: 0.8,
     strokeWeight: 2,
@@ -136,15 +137,9 @@ function initializeMap() {
     // in general, we always have to *set the map* when we
     // add features.
     map: my_map,
-    bounds: {
-      north: 42.685,
-      south: 40.671,
-      east: 12.501,
-      west: 12.485
-    },
-
-    center: {"lat": 41.9000, "lng":12.5000},
-    radius: 1000
+    center: {"lat": 51.512344, "lng":-0.090985},
+    radius: 2000,
+    window_content: "<h4>Rough Perimeter of Early Modern London</h4>"
   });
   my_map.data.setStyle(function (feature) {
     var thisColor = feature.getProperty("myColor");
