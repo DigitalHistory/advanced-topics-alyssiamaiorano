@@ -32,11 +32,7 @@ var myGeoJSON= {
                 "coordinates":[[[-85.60546875,49.03786794532644],[-96.6796875,40.713955826286046],
                                 [-79.62890625,37.71859032558816],[-81.2109375,49.26780455063753],
                                 [-85.60546875,49.03786794532644]]]}},
-                                //I couldnt actually figure out what was making the polygon not work, i tried imputting the
-                                //numbers in various ways. i at first attempted to put these numbers as seen below, but it
-                                //didnt work. it would have been nice to actually show the perimeters of Early Modern London
-                                //i've typed in the coordinates in lat long but maybe that is the problem... i dont know what
-                                //kind of quardinates to use.
+
    {"type":"Feature",
     "properties":{myColor: 'green'},
     "myColor" : "green",
@@ -66,33 +62,33 @@ function initializeMap() {
               icon: blueURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
               title: "St. Thomas's Hospital",
-              window_content: "<h1>St. Thomas's Hopsital</h1><p> Initially dissolved in 1539, due to King Henry VIII's Act of Supremacy that confescated all church property, separating church and state. Founded in 1100 and reinstated in 1551. </p>"
+              window_content: "<h1>St. Thomas's Hopsital</h1><br><p><img src=\'https://i.pinimg.com/originals/aa/92/9a/aa929ac63db2167d353fbe5e25b06046.jpg'</p><p> Initially dissolved in 1539, due to King Henry VIII's Act of Supremacy that confescated all church property, separating church and state. Founded in 1100 and reinstated in 1551. </p>"
              },
              {position: new google.maps.LatLng(51.516763,-0.098675),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map
-              title: "St. Bartholemew's Hospital",
-              window_content: "<h1>St. Bartholemew's Hospital</h1><p>One of the latter Royal Hospitals, located just North of the City's borders, here there began an emphasis on gardens, and outdoor space for patients. Founded in 1123, and was refounded in 1546 by King Henry I, a plague year.</p>"
+              title: "St. Bartholomew's Hospital",
+              window_content: "<h1>St. Bartholemew's Hospital</h1><br><p><img src=\'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/StBart.jpg/250px-StBart.jpg'</p><p>One of the latter Royal Hospitals, located just North of the City's borders, here there began an emphasis on gardens, and outdoor space for patients. Founded in 1123, and was refounded in 1546 by King Henry I, a plague year.</p>"
             },
             {position: new google.maps.LatLng(51.380922,-0.028995),
              map: my_map,
              icon: blueURL, // this sets the image that represents the marker in the map
              title: "Bethlem Hospital",
-             window_content: "<h1>Bethlem Hospital</h1><img src= \'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Most_of_Bethlehem_Hospital_by_William_Henry_Toms_for_William_Maitland%27s_History_of_London%2C_published_1739.jpg/220px-Most_of_Bethlehem_Hospital_by_William_Henry_Toms_for_William_Maitland%27s_History_of_London%2C_published_1739.jpg'><p>Known as 'Bedlam' Hospital during the time, one of the only hospitals in London to treat syphilis patients during the 16th and 17th Century. Founded in 1247 and in 1337 as a hospital, Bedlam was one of the first Royal Hopsitals reinstated after the dissolution of the Monasteries, in 1546.</p>"
+             window_content: "<h1>Bethlem Hospital</h1><br><p><img src= \'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Most_of_Bethlehem_Hospital_by_William_Henry_Toms_for_William_Maitland%27s_History_of_London%2C_published_1739.jpg/220px-Most_of_Bethlehem_Hospital_by_William_Henry_Toms_for_William_Maitland%27s_History_of_London%2C_published_1739.jpg'></p><p>Known as 'Bedlam' Hospital during the time, one of the only hospitals in London to treat syphilis patients during the 16th and 17th Century. Founded in 1247 and in 1337 as a hospital, Bedlam was one of the first Royal Hopsitals reinstated after the dissolution of the Monasteries, in 1546.</p>"
            },
            {position: new google.maps.LatLng(51.544976,-0.116053),
              map: my_map,
              icon: blueURL, // this sets the image that represents the marker in the map to the one
                             // located at the URL which is given by the variable blueURL, see above
              title: "BrideWell Hospital and Prison",
-             window_content: "<h1>BrideWell</h1> <p> Both hospital and prison, solidified ideas of illness and evil and punishment for criminality or 'loose morals,' BridwWell is a testiment to the period's mentality on illness. Bridewell was established in a former Royal Palace in London in 1553.</p>"
+             window_content: "<h1>BrideWell</h1><br><p><img src=\'https://www.londonlives.org/static/images/ProspectofBridewell.jpg'</p> <p> Both hospital and prison, solidified ideas of illness and evil and punishment for criminality or 'loose morals,' BridwWell is a testiment to the period's mentality on illness. Bridewell was established in a former Royal Palace in London in 1553.</p>"
             },
             {position: new google.maps.LatLng(51.512344, -0.090985),
               map: my_map,
               icon: redURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
               title: "City of London",
-              window_content: "<h1>London Center 16th Century</h1><p> What is now known as the City of London, this area used to be the focal point of London, until the end of the 17th century when emmigration to London grew too much for the city, expanding to include Westminster.</p>"
+              window_content: "<h1>London Center 16th Century</h1><br><p><img src=\'https://www.uni-due.de/SHE/LondonTudor.JPG'</p><p> What is now known as the City of London, this area used to be the focal point of London, until the end of the 17th century when emmigration to London grew too much for the city, expanding to include Westminster.</p>"
             }];
 
     for (j = 0; j < all_my_markers.length; j++) {
