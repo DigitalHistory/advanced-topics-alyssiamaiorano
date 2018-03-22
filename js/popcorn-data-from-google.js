@@ -7,7 +7,7 @@ var loadPopcorn = function(){
     // You'll need to change the key to match your spreadsheet.  Remember, this is the
     // part in the spreadsheet URL that comes between "key=" and "&"
     // It's very important, though, to keep the same column headers as in our example spreadsheet!
-    var public_spreadsheet_key = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSmkVVaEH55l40uJvWZqKuUoNYZmMhrFTD5BqyVKdordSwupDIZPrAE1I6jS2NofiWCl5IkMX516Pd1/pubhtml?gid=0&single=true';
+    var public_spreadsheet_key = 'https://docs.google.com/spreadsheets/d/1kDoMEPCEXKuW-rykVWs6ivyGcY7cR7FmYGLaKI_70ko/edit?usp=sharing';
 
     // now we are going to use the tabletop.js library, which was called in our
     // HTML file, to grab the date from the spreadsheet and process it so that
@@ -17,7 +17,7 @@ var loadPopcorn = function(){
                                     simpleSheet: false } );
     // if you're having problems with this, you can uncomment the next line and
     // look in the browser's console to see if the data looks like it's supposed to.
-    // console.log(mytables.data);
+     console.log(mytables.data);
 
     // This is our "callback function".  When tabletop grabs the spreadsheet data,
     // it gets sent here and processed.  We take advantage of this feature of tabletop
