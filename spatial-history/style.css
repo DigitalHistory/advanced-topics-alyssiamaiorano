@@ -25,12 +25,13 @@ div#map_canvas {
 have to add some extra css to the mapcontainer div */
 div#map_legend {
     max-width:30%;
-    float:left;
+    float:clear;
+
 }
 
 /* if you want, you can make the text in the legend less ugly by adding
 extra css classes */
-div#map_legend h1, div#map_legend h3 {
+div#map_legend h1, div#map_legend h6 {
 
 }
 
@@ -71,12 +72,12 @@ div.address  {
 
 }
 
-div.description {
+div.description { font-size: 20px
 
 }
 
 div.gm-style-iw {
-    max-height: 75px;
+    max-height: 150px;
 }
 div.gm-style-iw img {
     max-width: 75% !important;
