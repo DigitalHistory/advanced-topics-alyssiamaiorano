@@ -118,9 +118,12 @@ div.clearme {
 
 #popcorn-container {
    border: 4px solid ##ff99cc;
-   width: 500px;
+   width: 425px;
    height: 640px;
    overflow: scroll;
    background-color: #ffe6f2;
    padding: 10px;
+}
+#popcorn-container img {
+  max-width: 90%;
 }
