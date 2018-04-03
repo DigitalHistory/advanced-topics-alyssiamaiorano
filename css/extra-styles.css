@@ -8,7 +8,9 @@
 /* We start with the spatial history assignment */
 
 /* add any styling for the main div here */
-div.container {
+div.container { font-family: Times, sans-serif;
+
+
 }
 
 div#mapcontainer {
@@ -31,7 +33,7 @@ div#map_canvas {
 have to add some extra css to the mapcontainer div */
 div#map_legend {
     max-width:30%;
-    float:left;
+    float:right;
 }
 
 /* if you want, you can make the text in the legend less ugly by adding
@@ -57,10 +59,12 @@ button.rounded {
   border: 1px black solid;
 }
 button#hide {
-  background:orange;
+  background:blue;
+  border-color: black;
 }
 button#show {
-  background:green;
+  background:blue;
+  border-color: black;
 }
 
 /* use these last three to style the text inside the
@@ -70,7 +74,7 @@ button#show {
 */
 
 div#map_canvas h1 {
-
+font-family: Arial, sans-serif;
 }
 
 div.address  {
@@ -82,16 +86,19 @@ div.description {
 }
 
 div.gm-style-iw {
-    max-height: 75px;
+    /*max-height: 150px;*/
+max-width: 80%;
 }
 div.gm-style-iw img {
     max-width: 75% !important;
 }
 
 div.gm-style-iw blockquote {
-    font-family:cursive;
+    font-family: fantasy;
 }
-
+div.clearme {
+    clear:both;
+}
 
 /* Here's some adidtional CSS for the oral history project.  */
 
@@ -110,11 +117,13 @@ div.gm-style-iw blockquote {
 }
 
 #popcorn-container {
-   border: 4px solid #aa0000;
+   border: 4px solid ##ff99cc;
    width: 425px;
    height: 640px;
    overflow: scroll;
-   background-color: #F4F4F4;
+   background-color: #ffe6f2;
    padding: 10px;
 }
-
+#popcorn-container img {
+  max-width: 90%;
+}
